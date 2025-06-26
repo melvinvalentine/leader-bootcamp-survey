@@ -36,7 +36,7 @@ form.addEventListener('submit', e => {
     }
   }
 
-  fetch('https://script.google.com/macros/s/AKfycbx_0ubWf_f4F6t9nLHlOJyI7c5mtGCrDHr-TKlO_PgPYwU1rTtEgLkZM3VOp2pzr6fA/exec', {
+  fetch('https://webhook.site/c84968a4-202a-4ec3-8d25-c02bb34c0215', {
     method: 'POST',
     body: JSON.stringify(data),
     headers: {
