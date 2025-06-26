@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>People Leader Boot Camp Survey</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>People Leader Boot Camp 2.0: Pre-Survey</h1>
+    <form id="surveyForm">
+
+      <div class="section">
+        <h2>Your Name</h2>
+        <input type="text" name="name" required>
+      </div>
+
+      <div class="section">
+        <h2>1. What’s On Your Mind as a Leader?</h2>
+        <p>(Check all that apply)</p>
+        <label><input type="checkbox" name="topics" value="change"> Leading through change</label>
+        <label><input type="checkbox" name="topics" value="feedback"> Giving feedback</label>
+        <label><input type="checkbox" name="topics" value="boundaries"> Setting boundaries as a leader</label>
+        <label><input type="checkbox" name="topics" value="performance"> Managing performance conversations</label>
+        <label><input type="checkbox" name="topics" value="trust"> Building trust and psychological safety</label>
+        <label><input type="checkbox" name="topics" value="delegating"> Delegating effectively</label>
+        <label><input type="checkbox" name="topics" value="conflict"> Navigating interpersonal conflict</label>
+        <label><input type="checkbox" name="topics" value="accountability"> Holding others accountable</label>
+        <label><input type="checkbox" name="topics" value="empathy"> Leading with empathy</label>
+        <label><input type="checkbox" name="topics" value="burnout"> Preventing burnout</label>
+        <label>Other: <input type="text" name="topic_other"></label>
+      </div>
+
+      <div id="feedbackFollowup" class="section">
+        <h2>2a. What’s the hardest part about giving feedback?</h2>
+        <label><input type="radio" name="feedback_difficulty" value="starting"> Starting the conversation</label>
+        <label><input type="radio" name="feedback_difficulty" value="kindness"> Being direct but kind</label>
+        <label><input type="radio" name="feedback_difficulty" value="emotion"> Keeping emotion in check</label>
+        <label><input type="radio" name="feedback_difficulty" value="received"> Worrying how it’ll be received</label>
+        <label>Other: <input type="text" name="feedback_other"></label>
+      </div>
+
+      <div id="accountabilityFollowup" class="section">
+        <h2>2b. What does “accountability” mean to you in your current role?</h2>
+        <label><input type="radio" name="accountability_meaning" value="followup"> Following up on commitments</label>
+        <label><input type="radio" name="accountability_meaning" value="deadlines"> Addressing missed deadlines</label>
+        <label><input type="radio" name="accountability_meaning" value="standards"> Maintaining high standards</label>
+        <label><input type="radio" name="accountability_meaning" value="conflict"> Navigating conflict</label>
+        <label>Other: <input type="text" name="accountability_other"></label>
+      </div>
+
+      <div id="burnoutFollowup" class="section">
+        <h2>2c. What do you need more of to prevent burnout?</h2>
+        <label><input type="radio" name="burnout_support" value="tools"> Tools or boundaries for managing workload</label>
+        <label><input type="radio" name="burnout_support" value="pause"> Permission to pause</label>
+        <label><input type="radio" name="burnout_support" value="communication"> Communication practices</label>
+        <label><input type="radio" name="burnout_support" value="support"> Emotional support or validation</label>
+        <label>Other: <input type="text" name="burnout_other"></label>
+      </div>
+
+      <div class="section">
+        <h2>3. Honest Confessions</h2>
+        <label>What’s something you struggle with as a leader?<br>
+          <textarea name="leader_struggle"></textarea>
+        </label>
+        <label>What do you wish someone had taught you earlier?<br>
+          <textarea name="early_lesson"></textarea>
+        </label>
+      </div>
+
+      <div class="section">
+        <h2>4. Preferences & Learning Style</h2>
+        <label><input type="checkbox" name="formats" value="roleplay"> Real-time scenarios</label>
+        <label><input type="checkbox" name="formats" value="discussion"> Small group discussions</label>
+        <label><input type="checkbox" name="formats" value="journaling"> Individual reflection</label>
+        <label><input type="checkbox" name="formats" value="peer"> Peer coaching</label>
+        <label><input type="checkbox" name="formats" value="expert"> Expert-led breakouts</label>
+        <label>Other: <input type="text" name="format_other"></label>
+      </div>
+
+      <div class="section">
+        <label>What helps learning stick for you?<br>
+          <textarea name="learning_retention"></textarea>
+        </label>
+        <label>Would you like to co-facilitate a topic?<br>
+          <select name="cofacilitate">
+            <option value="">Select</option>
+            <option value="yes">Yes – I’d love to share</option>
+            <option value="maybe">Maybe – Tell me more</option>
+            <option value="no">Not right now</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="section">
+        <label>Anything else you’d like to share?<br>
+          <textarea name="final_comments"></textarea>
+        </label>
+        <button type="submit">Submit Survey</button>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
